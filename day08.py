@@ -45,3 +45,35 @@ def loop_set(colors):
     for color in colors:
         print(color)
     return colors
+
+def dictionnary_create():
+    student = {
+        "name": "John",
+        "age": 25
+    }
+    print(student)
+    return student
+
+def access_dictionnary(student):
+    student = dictionnary_create()
+    print(student.get("name"))
+    return student
+
+def update_dictionnary(student):
+    student = dictionnary_create()
+    student["age"] = 26
+    student["city"] = "New York"
+    print(student)
+    return student
+
+def remove_dictionnary_item(student):
+    student = dictionnary_create()
+    student.pop("age")
+    print(student)
+    return student
+
+def loop_on_dictionnary(student):
+    student = dictionnary_create()
+    for key, value in student.items():
+        print(f"{key}: {value}")
+    return student
